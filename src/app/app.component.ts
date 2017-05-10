@@ -30,5 +30,5 @@ export class AppComponent {
   //   doc.open();
   //   doc.write(content);
   //   doc.close();
-  }
+  // }
 }
