@@ -1,0 +1,66 @@
+<h1>HTML Playground!</h1>
+<div class="trytopnav">
+<div class="w3-bar w3-light-grey" style="border-top:1px solid #f1f1f1;overflow:auto">
+  <button class="w3-button w3-bar-item w3-green w3-hover-white w3-hover-text-green" (click)="codeRun(textareaCode.value)">Run &raquo;</button>
+  <span class="w3-right w3-hide-medium w3-hide-small" style="padding:8px 8px 8px 8px;display:block"></span>
+  <span class="w3-right w3-hide-small" style="padding:8px 0;display:block;float:right;"><span id="framesize"></span></span>
+</div>
+</div>
+<div id="container">
+  <div id="textareacontainer">
+    <div id="textarea">
+      <div id="textareawrapper">
+        <textarea #textareaCode autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false"><!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    margin: 0 0 50px 0;
+}
+
+h2 {
+    margin: 20px 0 0 0;
+}
+</style>
+</head>
+<body>
+
+<p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. Then, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+
+</body>
+</html>
+</textarea>
+<!-- <codemirror [(ngModel)]="codeMirrorContent" [config]="codeMirrorConfig"><!DOCTYPE html></codemirror> -->
+        <!-- <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
+          <input type="hidden" name="code" id="code" />
+        </form> -->
+       </div>
+    </div>
+  </div>
+  <div id="iframecontainer">
+    <div id="iframe">
+      <div id="iframewrapper">
+      	<iframe #iframeResult frameborder="0" id="iframeResult" name="iframeResult"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <script>
+
+function colorcoding() {  
+  window.editor = CodeMirror.fromTextArea(document.getElementById("textareaCode"), {
+    mode: "text/html",
+    htmlMode: true,
+    lineWrapping: true,
+    smartIndent: false,
+    addModeClass: true
+  });
+//  window.editor.on("change", function () {window.editor.save();});
+}
+colorcoding();
+
+
+</script> -->
